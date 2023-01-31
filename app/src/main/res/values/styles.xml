@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="ShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_size_16dp</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:background">@color/black_light</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="TitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewExample" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance" />
+
+    <style name="TextAppearance.TextField">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="TextAppearance.TextField.Hint">
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_size_8dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_size_8dp</item>
+        <item name="boxBackgroundColor">@color/control</item>
+        <item name="boxStrokeColor">@color/yellow</item>
+        <item name="android:textAppearance">
+            @style/TextAppearance.TextField
+        </item>
+        <item name="hintTextAppearance">
+            @style/TextAppearance.TextField.Hint
+        </item>
+        <item name="android:textColorHint">@color/silver_chalice</item>
+        <item name="hintTextColor">@color/silver_chalice</item>
+        <item name="endIconTint">@color/black</item>
+    </style>
+
+</resources>

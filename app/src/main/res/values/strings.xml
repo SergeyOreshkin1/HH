@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lesson01</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="task01">Task01</string>
+    <string name="task02">Task02</string>
+    <string name="task03">Task03</string>
+    <string name="open_red_activity">Open RedActivity</string>
+    <string name="open_green_activity">Open GreenActivity</string>
+    <string name="open_blue_activity">Open BlueActivity</string>
+    <string name="open_hello_activity">Open HelloActivity</string>
+    <string name="back">Back</string>
+    <string name="name">Name</string>
+    <string name="hint_task02">link, phoneNumber, email, or coordinates</string>
+    <string name="open">Open</string>
+    <string name="hello">Hello, %1$s !</string>
+    <string name="wrong_format">Wrong format</string>
+    <string name="example"> Something like: \n\n https://handh.ru/ \n\n +79855310868 \n\n your_mail@gmail.com  \n\n 43.554 -53.34 \n\n or look at the regular expression</string>
+</resources>
