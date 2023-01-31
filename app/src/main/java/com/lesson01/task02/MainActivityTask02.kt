@@ -9,7 +9,6 @@ import com.lesson01.AppConstants
 import com.lesson01.MainMenuActivity
 import com.lesson01.R
 import com.lesson01.databinding.ActivityMainTask02Binding
-import com.lesson01.task03.TextPattern
 
 class MainActivityTask02 : AppCompatActivity() {
 
