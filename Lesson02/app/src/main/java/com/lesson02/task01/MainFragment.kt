@@ -1,16 +1,12 @@
 package com.lesson02.task01
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import com.lesson02.BaseFragment
 import com.lesson02.databinding.MainFragmentTask01Binding
 
-class MainFragment : BaseFragment() {
-
-    private var _binding: MainFragmentTask01Binding? = null
-    private val binding get() = requireNotNull(_binding)
+class MainFragment : BaseFragment<MainFragmentTask01Binding>(
+    MainFragmentTask01Binding::inflate
+) {
 
     private fun navigateToEditFragment() = with(binding) {
         continueBtn.setOnClickListener {
@@ -29,25 +25,9 @@ class MainFragment : BaseFragment() {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = MainFragmentTask01Binding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+    override fun initializeFragment() {
         navigateToEditFragment()
         getNewMessage()
-        addOnBackPressedDispatcherCallback()
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 
     companion object {

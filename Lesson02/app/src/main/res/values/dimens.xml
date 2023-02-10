@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--  Margin Size -->
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_64dp">64dp</dimen>
 
     <!--  Text Size  -->
     <dimen name="small_text_size">12sp</dimen>
@@ -10,6 +13,7 @@
     <dimen name="medium_text_size">16sp</dimen>
     <dimen name="large_text_size">20sp</dimen>
     <dimen name="title_text_size">24sp</dimen>
+    <dimen name="xxl_text_size">64sp</dimen>
 
     <!--  Radius Size -->
     <dimen name="radius_size_16dp">16dp</dimen>

@@ -1,18 +1,14 @@
 package com.lesson02.task01
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.os.bundleOf
+import com.lesson02.BaseFragment
 import com.lesson02.R
 import com.lesson02.databinding.EditFragmentTask01Binding
+import com.lesson02.extensions.showToast
 
-class EditFragment : BaseFragment() {
-
-    private var _binding: EditFragmentTask01Binding? = null
-    private val binding get() = requireNotNull(_binding)
+class EditFragment : BaseFragment<EditFragmentTask01Binding>(
+    EditFragmentTask01Binding::inflate
+) {
 
     private fun saveNewMessage() = with(binding) {
         saveBtn.setOnClickListener {
@@ -24,7 +20,7 @@ class EditFragment : BaseFragment() {
                         )
                 )
             } else {
-                showError()
+                showToast(resources.getString(R.string.toast_empty_error))
             }
         }
     }
@@ -34,32 +30,9 @@ class EditFragment : BaseFragment() {
         editMessageEditText.setText(newMessage)
     }
 
-    private fun showError() {
-        Toast.makeText(
-            requireContext(),
-            resources.getString(R.string.toast_empty_error),
-            Toast.LENGTH_SHORT
-        ).show()
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = EditFragmentTask01Binding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        getMessage()
+    override fun initializeFragment() {
         saveNewMessage()
-        addOnBackPressedDispatcherCallback()
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        getMessage()
     }
 
     companion object {
