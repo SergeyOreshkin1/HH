@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lesson02</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="task01">Task01</string>
+    <string name="task02">Task02</string>
+    <string name="task03">Task03</string>
+    <string name="task04">Task04</string>
+    <string name="back">Main Menu</string>
+    <string name="default_message">Исходное сообщение</string>
+    <string name="next">Далее</string>
+    <string name="edit">Редактирование</string>
+    <string name="save">Сохранить</string>
+    <string name="toast_empty_error">Сообщение не должно быть пустым</string>
+</resources>

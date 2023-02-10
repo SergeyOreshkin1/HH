@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Margin Size -->
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+
+    <!--  Text Size  -->
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="regular_text_size">14sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+    <dimen name="title_text_size">24sp</dimen>
+
+    <!--  Radius Size -->
+    <dimen name="radius_size_16dp">16dp</dimen>
+    <dimen name="radius_size_8dp">16dp</dimen>
+
+</resources>
