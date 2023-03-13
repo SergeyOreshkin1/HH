@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_title"
+        style="@style/TextAppearance.H1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_100"
+        android:gravity="center"
+        android:text="@string/menu" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/task01_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_100"
+        android:layout_marginTop="@dimen/normal_100"
+        android:text="@string/task01" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/task02_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_100"
+        android:layout_marginTop="@dimen/normal_100"
+        android:text="@string/task02" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lesson04</string>
+    <string name="task01">Task01</string>
+    <string name="task02">Task02</string>
+    <string name="back">Back</string>
+    <string name="menu">Main menu</string>
+    <string name="check_temperature">Check temperature</string>
+    <string name="temp_result_def">Temperature result</string>
+    <string name="temp_result">Temperature result: %1$s °C</string>
+    <string name="place_edit_text_hint">City or coordinates through a space like a 54.18 45.17</string>
+    <string name="error">Wrong format</string>
+    <string name="get_books">Get books</string>
+    <string name="books_with_status_availability">%1$s (%2$s)</string>
+    <string name="in_stoke_true">в наличии</string>
+    <string name="in_stoke_false">нет в наличии</string>
+    <string name="authors_error">Произошла ошибка в запросе getAuthors()</string>
+    <string name="books_error">Произошла ошибка в запросе getBooks()</string>
+    <string name="availability_error">Произошла ошибка в запросе getAvailability()</string>
+</resources>
