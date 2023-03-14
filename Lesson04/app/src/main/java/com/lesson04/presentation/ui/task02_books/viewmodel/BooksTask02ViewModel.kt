@@ -51,13 +51,11 @@ class BooksTask02ViewModel(
                         )
                     }
                         .onFailure {
-                            clearData()
                             _error.postValue(Error.AVAILABILITY_ERROR_CODE)
                         }
                 }
             }
                 .onFailure {
-                    clearData()
                     _error.postValue(Error.BOOK_ERROR_CODE)
                 }
 
@@ -75,7 +73,6 @@ class BooksTask02ViewModel(
                 }
             }
                 .onFailure {
-                    clearData()
                     _error.postValue(Error.AUTHOR_ERROR_CODE)
                 }
 
@@ -85,7 +82,7 @@ class BooksTask02ViewModel(
         }
     }
 
-    fun clearData() {
+    private fun clearData() {
         booksListWithAvailability.clear()
         authorWithBooksList.clear()
     }

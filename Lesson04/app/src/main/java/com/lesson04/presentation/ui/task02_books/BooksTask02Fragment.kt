@@ -34,7 +34,6 @@ class BooksTask02Fragment : BaseFragment<FragmentBooksTask02Binding>(
 
     private fun btnGetBooksSetOnClickListener() {
         binding.getBooksBtn.setOnClickListener {
-            viewModel.clearData()
             getResult()
             binding.getBooksBtn.isEnabled = false
             android.os.Handler().postDelayed({

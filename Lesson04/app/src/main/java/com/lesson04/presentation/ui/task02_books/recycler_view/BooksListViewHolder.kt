@@ -19,7 +19,7 @@ class BooksListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         with(RvItemAuthorCellBinding.bind(itemView)) {
             if (item.booksList.isNotEmpty() && item.author.isNotEmpty()) {
                 authorTextView.text = item.author
-                val onlyBooksTitlesList = requireNotNull(item.booksList).map {
+                val onlyBooksTitlesList = item.booksList.map {
                     itemView.context.getString(
                         R.string.books_with_status_availability,
                         it.title,
@@ -31,6 +31,10 @@ class BooksListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 val joinedBooksList: String? =
                     onlyBooksTitlesList.let { java.lang.String.join(DELIMITER, it) }
                 booksTextView.text = joinedBooksList
+            }
+            if (item.booksList.isEmpty() || item.author.isEmpty()) {
+                booksTextView.text = ""
+                authorTextView.text = ""
             }
         }
     }
